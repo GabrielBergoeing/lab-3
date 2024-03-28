@@ -1,0 +1,58 @@
+body { 
+  background: #8C6A5D !important; 
+}
+
+/* ----- NAVIGATION BAR ----- */
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #FF204E;
+  color: #EEE4B1;
+}  
+.navbar .navbar-nav .nav-link {
+padding: 0.6em;
+font-size: 1.2em;
+color: #EEE4B1;
+transition: all 0.5s;
+}
+.navbar .navbar-brand {
+padding: 0 0.6em;
+font-size: 1.5em;
+color: #EEE4B1;
+font-weight: bold;
+}
+@media only screen and (min-width: 992px) {
+.navbar {
+  padding: 0;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 1em 0.7em;
+}
+.navbar .navbar-brand {
+  padding: 0 0.8em;
+}
+}
+
+/* ----- CONTENT HUB ----- */
+.border {
+  background-color: #EEE4B1;
+}
+
+
+/* ----- POSTS ----- */
+.posts {
+  border-style: hidden;
+  background-color: #A0153E;
+  border-radius: 4%;
+  transition: all 0.5s;
+}
+.posts:hover{
+  background-color: #FF204E;
+  color: #EEE4B1;
+}
+img {
+  width: 480px; /* You can set the dimensions to whatever you want */
+  height: 270px;
+  object-fit: cover;
+}
+.figure-caption{
+  color: #EEE4B1;
+}
