@@ -1,2 +1,60 @@
+  <div class="row">
+    <div class="col-1 d-none d-md-block"></div>
+    <div class="col-md-10 col-12 border border-light" style="--bs-border-opacity: .5;">
+    <p><br><br><br></p>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputName1" class="form-label">Full Name</label>
+          <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="cool-button">Submit</button>
+
+
+        <!-- Cool button -->
+        <script type="text/javascript">
+           window.addEventListener("load", onLoadHandler);
+           function onLoadHandler(){
+             let button = document.getElementById("cool-button");
+             button.addEventListener("click",buttonClick);
+            }
+            function buttonClick(e){
+              let name = document.getElementById("exampleInputName1");
+              let email = document.getElementById("exampleInputEmail1");
+              let text = document.getElementById("exampleFormControlTextarea1");
+              name.innerText = "";
+              email.innerText = "";
+              text.innerText = "";
+              alert("Thank you for your message, we will contact you soon.");
+            }
+        </script>
+                
+      </form>
+    </div>
+    <div class="col-1 d-none d-md-block"></div>
   </body>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: #A0153E;">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </html>

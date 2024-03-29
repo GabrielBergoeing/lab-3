@@ -44,7 +44,7 @@ font-weight: bold;
   border-radius: 4%;
   transition: all 0.5s;
 }
-.posts:hover{
+.posts:hover {
   background-color: #FF204E;
   color: #EEE4B1;
 }
@@ -58,4 +58,11 @@ img {
 }
 a {
   color: #EEE4B1;
+}
+
+
+/* ----- ABOUT ----- */
+.splash-art {
+  width: 960px; /* You can set the dimensions to whatever you want */
+  height: 540px;
 }
